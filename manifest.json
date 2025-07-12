@@ -5,5 +5,14 @@
   "description": "Extracts theme (colors, typography, etc.) from websites and provides it in a structured JSON format.",
   "action": {
     "default_popup": "popup/popup.html"
-  }
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
