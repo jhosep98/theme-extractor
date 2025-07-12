@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Theme Extractor",
+  "version": "0.1.0",
+  "description": "Extracts theme (colors, typography, etc.) from websites and provides it in a structured JSON format.",
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
