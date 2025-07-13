@@ -1,18 +1,27 @@
 {
   "manifest_version": 3,
   "name": "Theme Extractor",
-  "version": "0.1.0",
   "description": "Extracts theme (colors, typography, etc.) from websites and provides it in a structured JSON format.",
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "src/pages/popup/index.html",
+    "default_icon": {
+      "32": "icon-32.png"
+    }
   },
-  "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["scripts/content.js"],
-      "run_at": "document_idle"
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["src/pages/content/index.tsx"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon-128.png", "icon-32.png"],
+      "matches": []
     }
   ]
 }
