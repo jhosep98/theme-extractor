@@ -2,7 +2,7 @@
   padding: 10px;
   height: 400px;
   width: 400px;
-  font-family: Courier New, Courier, monospace;
+  font-family: Courier New, monospace;
   background: #0d0f12;
   display: flex;
   flex-direction: column;
@@ -90,8 +90,8 @@
   line-height: 1.43;
   letter-spacing: 0.01071em;
   padding: 6px 16px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -2px rgb(0 0 0 / 0.05);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px
+    rgb(0 0 0 / 0.05);
 }
 
 .popup__notification__text {

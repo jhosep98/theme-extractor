@@ -13,7 +13,10 @@
     "build:firefox": "vite build --config vite.config.firefox.ts",
     "dev": "nodemon --config nodemon.chrome.json",
     "dev:chrome": "nodemon --config nodemon.chrome.json",
-    "dev:firefox": "nodemon --config nodemon.firefox.json"
+    "dev:firefox": "nodemon --config nodemon.firefox.json",
+    "format": "exec biome format --write",
+    "lint": "exec biome lint --write",
+    "check": "exec biome check --write"
   },
   "type": "module",
   "dependencies": {
@@ -22,6 +25,7 @@
     "webextension-polyfill": "0.12.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@crxjs/vite-plugin": "2.0.0-beta.32",
     "@tailwindcss/vite": "4.1.8",
     "@types/chrome": "0.1.0",
