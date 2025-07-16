@@ -59,6 +59,9 @@ const Popup: React.FC = () => (
       <div className="flex justify-end items-center">
         <button
           type="button"
+          onClick={() => {
+            console.log("Copy clicked from popup");
+          }}
           id="copy"
           className="bg-gray-200 rounded-md p-2 cursor-pointer hover:bg-gray-300 transition-colors inline-flex gap-2 items-center text-base"
           aria-label="Copy to clipboard"
