@@ -5,7 +5,14 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["node_modules", "dist", "build", "public", "src/assets"],
+    "ignore": [
+      "node_modules",
+      "dist",
+      "build",
+      "public",
+      "src/assets",
+      "dist_chrome"
+    ],
     "include": [
       "**/*.ts",
       "**/*.js",
